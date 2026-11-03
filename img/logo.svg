@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 230">
+<clipPath id="strateClip"><text x="170" y="190" text-anchor="start" font-size="24" font-weight="500" font-family="Helvetica,Arial,sans-serif">STRATE</text></clipPath>
+<path d="M125,150 L125,30 L170,90 L215,30 L215,150" fill="none" stroke="#1c3c66" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="125" cy="150" r="12" fill="#ffffff"/><circle cx="125" cy="150" r="9" fill="#c9a227"/>
+<circle cx="125" cy="30" r="12" fill="#ffffff"/><circle cx="125" cy="30" r="9" fill="#c9a227"/>
+<circle cx="170" cy="90" r="12" fill="#ffffff"/><circle cx="170" cy="90" r="9" fill="#c9a227"/>
+<circle cx="215" cy="30" r="12" fill="#ffffff"/><circle cx="215" cy="30" r="9" fill="#c9a227"/>
+<circle cx="215" cy="150" r="12" fill="#ffffff"/><circle cx="215" cy="150" r="9" fill="#c9a227"/>
+<text x="170" y="190" text-anchor="end" font-size="24" font-weight="500" fill="#1c3c66" font-family="Helvetica,Arial,sans-serif">MICRON</text>
+<g clip-path="url(#strateClip)">
+<rect x="170" y="170" width="100" height="2" fill="#1c3c66"/>
+<rect x="170" y="174" width="100" height="3" fill="#1c3c66"/>
+<rect x="170" y="179" width="100" height="4" fill="#1c3c66"/>
+<rect x="170" y="185" width="100" height="5" fill="#1c3c66"/>
+</g>
+<text x="170" y="214" text-anchor="middle" font-size="11" fill="#c9a227" font-family="Helvetica,Arial,sans-serif" letter-spacing="3">STUDIO</text>
+</svg>
