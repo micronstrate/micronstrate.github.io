@@ -54,10 +54,23 @@ nav a:hover{color:#0f2440;text-decoration:underline}
 .sound-btn:hover{background:rgba(18,18,20,.9)}
 /* logo animation */
 @keyframes draw{to{stroke-dashoffset:0}}@keyframes pop{to{transform:scale(1);opacity:1}}@keyframes up{to{transform:none;opacity:1}}
-.ms-path{stroke-dasharray:350;stroke-dashoffset:350;animation:draw 1.1s ease-in-out .2s forwards}
+.ms-path{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 1.1s ease-in-out .2s forwards}
 .ms-dot{transform:scale(0);opacity:0;transform-box:fill-box;transform-origin:center;animation:pop .3s ease-out forwards}
 .ms-word{opacity:0;transform:translateY(8px);animation:up .4s ease-out forwards}
 @media (prefers-reduced-motion:reduce){.ms-path,.ms-dot,.ms-word{animation:none;stroke-dashoffset:0;transform:none;opacity:1}}
+/* pages */
+.navy{background:#14284a;color:#fff}
+.navy .eyebrow{color:#e2c25a}
+.navy .lead p{color:#d7dce6}
+.navy figcaption{color:#fff}
+.serif{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:-.02em}
+.pages-video{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:20px;background:#0e1a2e;box-shadow:0 24px 50px rgba(0,0,0,.25);margin-bottom:44px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.split img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+.navy .stats div{border-top-color:rgba(226,194,90,.6)}
+.navy .stats .big2{font-family:Georgia,serif;font-weight:700;font-size:44px;line-height:1;color:#e2c25a}
 /* sections */
 section{scroll-margin-top:70px}
 .red{background:var(--red);color:#fff}
@@ -118,6 +131,7 @@ footer a{color:#4a5164}
 </a>
 <nav aria-label="Navigation principale">
 <a href="#creations">Créations</a>
+<a href="#pages">Marque-page</a>
 <a class="hide-sm" href="#atelier">Atelier</a>
 <a href="#apropos">À propos</a>
 <a href="#contact">Contact</a>
@@ -135,11 +149,11 @@ footer a{color:#4a5164}
 <div class="hero-title"><svg viewBox="60 10 230 215" style="width:150px;height:auto;flex:none" role="img" aria-label="Logo Micronstrate Studio">
 <defs><clipPath id="stclip"><text x="170" y="190" font-size="24" font-weight="500" font-family="Helvetica,Arial,sans-serif">STRATE</text></clipPath></defs>
 <path class="ms-path" d="M125,150 L125,30 L170,90 L215,30 L215,150" fill="none" stroke="#1c3c66" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<circle class="ms-dot" cx="125" cy="30" r="9" fill="#c9a227" style="animation-delay:1.15s"/>
-<circle class="ms-dot" cx="170" cy="90" r="9" fill="#c9a227" style="animation-delay:1.22s"/>
-<circle class="ms-dot" cx="215" cy="30" r="9" fill="#c9a227" style="animation-delay:1.29s"/>
-<circle class="ms-dot" cx="125" cy="150" r="9" fill="#c9a227" style="animation-delay:1.36s"/>
-<circle class="ms-dot" cx="215" cy="150" r="9" fill="#c9a227" style="animation-delay:1.43s"/>
+<g class="ms-dot" style="animation-delay:1.15s"><circle cx="125" cy="30" r="12" fill="#f6f4ef"/><circle cx="125" cy="30" r="9" fill="#c9a227"/></g>
+<g class="ms-dot" style="animation-delay:1.22s"><circle cx="170" cy="90" r="12" fill="#f6f4ef"/><circle cx="170" cy="90" r="9" fill="#c9a227"/></g>
+<g class="ms-dot" style="animation-delay:1.29s"><circle cx="215" cy="30" r="12" fill="#f6f4ef"/><circle cx="215" cy="30" r="9" fill="#c9a227"/></g>
+<g class="ms-dot" style="animation-delay:1.36s"><circle cx="125" cy="150" r="12" fill="#f6f4ef"/><circle cx="125" cy="150" r="9" fill="#c9a227"/></g>
+<g class="ms-dot" style="animation-delay:1.43s"><circle cx="215" cy="150" r="12" fill="#f6f4ef"/><circle cx="215" cy="150" r="9" fill="#c9a227"/></g>
 <g class="ms-word" style="animation-delay:1.5s">
 <text x="170" y="190" text-anchor="end" font-size="24" font-weight="500" fill="#1c3c66" font-family="Helvetica,Arial,sans-serif">MICRON</text>
 <g clip-path="url(#stclip)" fill="#1c3c66"><rect x="170" y="170" width="100" height="2"/><rect x="170" y="174" width="100" height="3"/><rect x="170" y="179" width="100" height="4"/><rect x="170" y="185" width="100" height="5"/></g>
@@ -189,6 +203,36 @@ footer a{color:#4a5164}
 </div>
 </section>
 
+<section id="pages" class="navy">
+<div class="wrap pad">
+<div class="head-row">
+<div class="lead">
+<p class="eyebrow">Nouveau · Marque-page à mécanisme</p>
+<h2 class="serif big">Pages</h2>
+<p>Le marque-page qui retient ta page. Trois anneaux concentriques tournent du bout du doigt (centaines, dizaines, unités) et restent en place : il suffit de lire le numéro face à la flèche, de 000 à 999. La lame fine glisse dans le livre, ton prénom est incrusté en couleur.</p>
+</div>
+<a class="btn btn-white" style="color:#14284a" href="https://micronstratestudio.etsy.com">Bientôt sur Etsy</a>
+</div>
+<video class="pages-video" src="img/pages-presentation.mp4" poster="img/pages-presentation.jpg" controls muted playsinline preload="metadata" aria-label="Vidéo de présentation du marque-page Pages"></video>
+<div class="grid4">
+<figure><img src="img/pages-montre.jpg" width="1600" height="1066" loading="lazy" alt="Marque-page Pages style Montre, noir et or, cadran réglé sur la page 247"><figcaption>Montre · lunette crantée et index dorés</figcaption></figure>
+<figure><img src="img/pages-deco.jpg" width="1600" height="1066" loading="lazy" alt="Marque-page Pages style Art déco, bleu nuit et or"><figcaption>Art déco · silhouette en goutte, éventails</figcaption></figure>
+<figure><img src="img/pages-nordique.jpg" width="1600" height="1066" loading="lazy" alt="Marque-page Pages style Nordique, sable et anthracite"><figcaption>Nordique · lignes fines, lame effilée</figcaption></figure>
+<figure><img src="img/pages-astral.jpg" width="1600" height="1066" loading="lazy" alt="Marque-page Pages style Astral, bleu nuit et or, étoiles et Grande Ourse"><figcaption>Astral · étoiles, lune et Grande Ourse</figcaption></figure>
+</div>
+<div class="split">
+<img src="img/pages-livre.jpg" width="1600" height="1066" loading="lazy" alt="Marque-page Pages posé dans un livre ouvert à la page 503">
+<img src="img/pages-livre-zoom.jpg" width="1600" height="1066" loading="lazy" alt="Gros plan : le cadran indique 247, comme le numéro de la page">
+</div>
+<div class="stats">
+<div><span class="big2">000–999</span><span>pages, sur trois anneaux</span></div>
+<div><span class="big2">4</span><span>styles : Montre, Art déco, Nordique, Astral</span></div>
+<div><span class="big2">12</span><span>coloris</span></div>
+<div><span class="big2">1</span><span>prénom incrusté sur la lame</span></div>
+</div>
+</div>
+</section>
+
 <section id="atelier" class="sand">
 <div class="wrap pad">
 <div class="head-row">
@@ -199,8 +243,8 @@ footer a{color:#4a5164}
 </div>
 </div>
 <div class="cards">
-<article class="card"><svg class="ico" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" fill="none" stroke="#1c3c66" stroke-width="3"/><circle cx="22" cy="22" r="12" fill="none" stroke="#c9a227" stroke-width="3"/><circle cx="22" cy="22" r="4" fill="#1c3c66"/></svg><span class="tag">Mécanisme</span><h3>Marque-page Astrolabe</h3><p>Des anneaux qui tournent pour noter la page où tu t'es arrêté, de 000 à 999.</p></article>
-<article class="card"><svg class="ico" viewBox="0 0 44 44" aria-hidden="true"><rect x="4" y="8" width="16" height="28" rx="3" fill="none" stroke="#1c3c66" stroke-width="3"/><rect x="24" y="8" width="16" height="28" rx="3" fill="none" stroke="#c9a227" stroke-width="3"/></svg><span class="tag">Mécanisme</span><h3>Compteur de lecture</h3><p>Livres lus et pile à lire, sur des molettes à friction, avec un pied qui sert de serre-livres.</p></article>
+<article class="card"><svg class="ico" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" fill="none" stroke="#1c3c66" stroke-width="3"/><circle cx="22" cy="22" r="12" fill="none" stroke="#c9a227" stroke-width="3"/><circle cx="22" cy="22" r="4" fill="#1c3c66"/></svg><span class="tag">Mécanisme</span><h3>Pages, le marque-page</h3><p>Des anneaux qui tournent pour noter la page où tu t'es arrêté, de 000 à 999. <a href="#pages">Découvrir</a></p></article>
+<article class="card"><svg class="ico" viewBox="0 0 44 44" aria-hidden="true"><rect x="4" y="8" width="16" height="28" rx="3" fill="none" stroke="#1c3c66" stroke-width="3"/><rect x="24" y="8" width="16" height="28" rx="3" fill="none" stroke="#c9a227" stroke-width="3"/></svg><span class="tag">Mécanisme</span><h3>Présentoir de lecture</h3><p>Un présentoir à livre avec deux cadrans : les livres lus et la pile à lire, de 000 à 999.</p></article>
 <article class="card"><svg class="ico" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="24" r="16" fill="none" stroke="#c9a227" stroke-width="3"/><path d="M22 4v6" stroke="#1c3c66" stroke-width="3" stroke-linecap="round"/><path d="M14 24h16" stroke="#1c3c66" stroke-width="3" stroke-linecap="round"/></svg><span class="tag">Personnalisé</span><h3>Médaillon guilloché</h3><p>Une décoration ronde gravée d'un prénom et d'une année, à offrir ou à suspendre.</p></article>
 <article class="card"><svg class="ico" viewBox="0 0 44 44" aria-hidden="true"><rect x="6" y="6" width="32" height="32" rx="5" fill="none" stroke="#1c3c66" stroke-width="3"/><path d="M12 16h20M12 22h20M12 28h12" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/></svg><span class="tag">Sur mesure</span><h3>Aide-mémoire d'électroménager</h3><p>Les programmes de ta machine sur une plaque bicolore, lisible d'un coup d'œil.</p></article>
 </div>
