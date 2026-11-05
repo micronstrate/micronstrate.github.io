@@ -124,6 +124,7 @@ footer a{color:#4a5164}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
 .duo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px}
 .wide{width:100%;border-radius:16px;margin-top:20px}
+.wide-wrap{margin-top:20px}.wide-wrap .wide{margin-top:0}
 .sq-video{width:100%;max-width:560px;aspect-ratio:1/1;object-fit:cover;border-radius:20px;background:#0e1a2e;box-shadow:0 24px 50px rgba(0,0,0,.25)}
 .vrow{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:44px}
 .vrow p{margin:0 0 14px;font-size:18px;line-height:1.6}
@@ -139,6 +140,10 @@ footer a{color:#4a5164}
 .step h3{font-size:24px;margin:8px 0 10px}
 .step p{margin:0 0 10px;font-size:17px;line-height:1.65;color:var(--muted)}
 .note{font-size:15px;color:#5d6475;border-left:3px solid var(--gold);padding-left:14px;margin-top:40px}
+.lb{position:relative;display:block}
+.lb::after{content:attr(data-n);position:absolute;right:14px;bottom:14px;background:rgba(246,241,232,.92);color:#14284a;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:7px 13px;border-radius:999px}
+.duo .lb img,.lb img.wide{margin-top:0}
+.names4{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;margin-top:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}
 @media (max-width:860px){.vrow,.step,.duo{grid-template-columns:1fr}.step:nth-child(even) .step-img{order:0}}
 </style>
 </head>
@@ -252,8 +257,8 @@ footer a{color:#4a5164}
 <figure><img src="img/codex-page-gothica-seul.jpg" width="900" height="1125" loading="lazy" alt="Codex Page style Gothica, bordeaux et or, quadrilobe gothique"><figcaption>Gothica · arc brisé</figcaption></figure>
 </div>
 <div class="duo">
-<img src="img/codex-page-fenetre.jpg" width="1200" height="1500" loading="lazy" alt="Gros plan sur la fenêtre du Codex Page qui affiche la page 503">
-<img src="img/codex-page-livre.jpg" width="1200" height="1500" loading="lazy" alt="Codex Page Deco posé dans un livre ouvert à la page 503">
+<span class="lb" data-n="Astra"><img src="img/codex-page-fenetre.jpg" width="1200" height="1500" loading="lazy" alt="Gros plan sur la fenêtre du Codex Page qui affiche la page 503"></span>
+<span class="lb" data-n="Deco"><img src="img/codex-page-livre.jpg" width="1200" height="1500" loading="lazy" alt="Codex Page Deco posé dans un livre ouvert à la page 503"></span>
 </div>
 <div class="stats">
 <div><span class="big2">000–999</span><span>pages, sur trois roues</span></div>
@@ -266,7 +271,7 @@ footer a{color:#4a5164}
 <section id="codex-stand" class="cream2">
 <div class="wrap pad">
 <div class="vrow">
-<img class="rounded" src="img/codex-stand.jpg" width="1200" height="1500" loading="lazy" alt="Codex Stand style Astra avec un livre posé, deux cadrans à roues sur la base">
+<span class="lb" data-n="Deco"><img class="rounded" src="img/codex-stand.jpg" width="1200" height="1500" loading="lazy" alt="Codex Stand style Astra avec un livre posé, deux cadrans à roues sur la base"></span>
 <div>
 <p class="eyebrow">Codex Stand · le présentoir</p>
 <h3 class="serif" style="font-size:clamp(30px,4vw,42px);margin:10px 0 16px;color:var(--navy)">Ta pile à lire, enfin visible.</h3>
@@ -275,10 +280,10 @@ footer a{color:#4a5164}
 </div>
 </div>
 <video class="wide" src="img/codex-stand.mp4" poster="img/codex-stand-poster.jpg" controls muted playsinline preload="metadata" aria-label="Vidéo de présentation du Codex Stand" style="aspect-ratio:16/9;background:#0e1a2e;margin-top:0"></video>
-<img class="wide" src="img/codex-stand-compteurs.jpg" width="1600" height="1600" loading="lazy" alt="Gros plan sur les deux compteurs du Codex Stand : 025 livres lus, 011 livres à lire" style="aspect-ratio:16/9;object-fit:cover">
+<span class="lb wide-wrap" data-n="Deco"><img class="wide" src="img/codex-stand-compteurs.jpg" width="1600" height="1600" loading="lazy" alt="Gros plan sur les deux compteurs du Codex Stand : 025 livres lus, 011 livres à lire" style="aspect-ratio:16/9;object-fit:cover"></span>
 <div class="duo">
 <img src="img/codex-stand-composer.jpg" width="1200" height="1500" loading="lazy" alt="Infographie : choisir la base, le dossier et la fenêtre parmi quatre styles">
-<img src="img/set-codex-livre.jpg" width="1200" height="1500" loading="lazy" alt="Le Codex Page dépasse du livre posé sur le Codex Stand">
+<span class="lb" data-n="Set Astra"><img src="img/set-codex-livre.jpg" width="1200" height="1500" loading="lazy" alt="Le Codex Page dépasse du livre posé sur le Codex Stand"></span>
 </div>
 <img class="wide" src="img/codex-stand-styles.jpg" width="1600" height="900" loading="lazy" alt="Les quatre styles du Codex Stand : Astra, Nord, Deco, Gothica">
 <div class="stats">
@@ -301,6 +306,7 @@ footer a{color:#4a5164}
 <video class="sq-video" src="img/set-codex.mp4" poster="img/set-codex-poster.jpg" controls muted playsinline preload="metadata" aria-label="Vidéo de présentation du Set Codex"></video>
 </div>
 <img class="wide" src="img/set-codex-4-styles.jpg" width="1600" height="900" loading="lazy" alt="Les quatre Set Codex alignés : Astra, Nord, Deco, Gothica">
+<div class="names4"><span>Astra</span><span>Nord</span><span>Deco</span><span>Gothica</span></div>
 </div>
 </section>
 
@@ -314,15 +320,15 @@ footer a{color:#4a5164}
 </div>
 </div>
 <div class="steps">
-<div class="step"><div class="step-img"><img src="img/codex-page-tombe.jpg" width="1200" height="1500" loading="lazy" alt="Un marque-page classique tombé à côté du Codex Page" style="aspect-ratio:3/2"></div>
+<div class="step"><div class="step-img"><span class="lb" data-n="Nord"><img src="img/codex-page-tombe.jpg" width="1200" height="1500" loading="lazy" alt="Un marque-page classique tombé à côté du Codex Page" style="aspect-ratio:3/2"></span></div>
 <div><span class="num">1</span><h3>Partir d'un agacement tout bête</h3><p>Le marque-page qui glisse du livre, et la page qu'on cherche ensuite pendant cinq minutes. Le point de départ n'était pas un objet, mais ce petit problème que tous les lecteurs connaissent.</p></div></div>
-<div class="step"><div class="step-img"><img src="img/atelier-premier-jet.jpg" width="1600" height="1066" loading="lazy" alt="Le premier marque-page à anneaux, en trois coloris, avec un pompon"></div>
+<div class="step"><div class="step-img"><span class="lb" data-n="Ancien design Astrolabe"><img src="img/atelier-premier-jet.jpg" width="1600" height="1066" loading="lazy" alt="Le premier marque-page à anneaux, en trois coloris, avec un pompon"></span></div>
 <div><span class="num">2</span><h3>Un premier jet, puis on recommence</h3><p>La première version s'appelait « Astrolabe » : des anneaux à tourner, un pompon, quatre styles (Montre, Art déco, Nordique, Astral). Elle a ensuite été repensée pour former une vraie gamme avec un présentoir : une fenêtre qui affiche le numéro, et quatre styles communs aux deux objets.</p></div></div>
 <div class="step"><div class="step-img"><img src="img/atelier-essais-polices.jpg" width="1200" height="799" loading="lazy" alt="Comparatif de quatre polices cursives sur le prénom Margot, les traits trop fins surlignés en rouge"></div>
 <div><span class="num">3</span><h3>Tester ce que l'imprimante sait faire</h3><p>Un prénom en lettres cursives, c'est joli, mais une buse de 0,4 mm ne sait pas imprimer un trait plus fin qu'elle. J'ai donc mesuré, police par police, la part des traits trop fins (en rouge) avant de choisir.</p></div></div>
-<div class="step"><div class="step-img"><img src="img/atelier-modelisation.jpg" width="1600" height="1066" loading="lazy" alt="Vue éclatée du Codex Stand : dossier, base et fenêtres" style="object-fit:contain;background:#efe6d8"></div>
+<div class="step"><div class="step-img"><span class="lb" data-n="Deco"><img src="img/atelier-modelisation.jpg" width="1600" height="1066" loading="lazy" alt="Vue éclatée du Codex Stand : dossier, base et fenêtres" style="object-fit:contain;background:#efe6d8"></span></div>
 <div><span class="num">4</span><h3>Modéliser chaque pièce</h3><p>Tout est dessiné dans Fusion 360, pièce par pièce : la base, le dossier, les fenêtres, chaque roue et chaque chiffre. Les filets dorés sont des pièces à part, imprimées dans une autre couleur grâce à une imprimante multicolore.</p></div></div>
-<div class="step"><div class="step-img"><img src="img/set-codex-coin-lecture.jpg" width="1600" height="900" loading="lazy" alt="Le Set Codex Astra sur une table, dans un coin lecture"></div>
+<div class="step"><div class="step-img"><span class="lb" data-n="Set Astra"><img src="img/set-codex-coin-lecture.jpg" width="1600" height="900" loading="lazy" alt="Le Set Codex Astra sur une table, dans un coin lecture"></span></div>
 <div><span class="num">5</span><h3>Imprimer, corriger, réimprimer</h3><p>Le Codex Stand en est à sa quatrième version de prototype. La dernière s'imprime en trois plateaux, environ 13 heures de machine pour 340 g de filament. Le premier exemplaire, en Deco vert sapin et or, est en cours d'impression.</p></div></div>
 </div>
 <p class="note">À propos des images : les visuels de cette page sont des rendus 3D, réalisés dans Blender à partir des fichiers d'impression eux-mêmes. Les roues, les chiffres et les reliefs sont donc ceux des vrais objets. Les photos des pièces imprimées arrivent bientôt.</p>
