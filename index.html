@@ -41,7 +41,7 @@ nav a:hover{color:#0f2440;text-decoration:underline}
 @media (max-width:640px){nav a.hide-sm{display:none}.brand span{display:none}}
 /* hero */
 .hero{padding:28px 24px 88px;display:flex;flex-direction:column;gap:44px}
-.hero-video{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:24px;background:#c8141f;box-shadow:0 24px 50px rgba(22,35,58,.18)}
+.hero-video{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:24px;background:#0e1a2e;box-shadow:0 24px 50px rgba(22,35,58,.18)}
 .hero-txt{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
 .hero-title{display:flex;align-items:center;gap:28px}
 .hero h1{font-size:clamp(32px,3.6vw,48px);line-height:1.08;font-weight:700}
@@ -156,9 +156,9 @@ footer a{color:#4a5164}
 <span>MICRONSTRATE</span>
 </a>
 <nav aria-label="Navigation principale">
-<a href="#creations">Créations</a>
 <a href="#codex">Gamme Codex</a>
 <a class="hide-sm" href="#coulisses">Coulisses</a>
+<a href="#creations">Flip Stand</a>
 <a class="hide-sm" href="#atelier">Atelier</a>
 <a href="#apropos">À propos</a>
 <a href="#contact">Contact</a>
@@ -169,7 +169,7 @@ footer a{color:#4a5164}
 <main>
 <section id="accueil" class="wrap hero">
 <div class="hero-media">
-<video id="heroVideo" class="video hero-video" src="img/flipstand-presentation.mp4" poster="img/flipstand-presentation.jpg" autoplay muted loop playsinline preload="auto" aria-label="Vidéo de présentation du Flip Stand, l'étui-support pour casque Nothing Headphone"></video>
+<video id="heroVideo" class="video hero-video" src="img/codex-stand.mp4" poster="img/codex-stand-poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Vidéo de présentation du Codex Stand, le présentoir de lecture à compteurs"></video>
 <button id="soundBtn" class="sound-btn" type="button" aria-pressed="false">🔇 Activer le son</button>
 </div>
 <div class="hero-txt">
@@ -190,43 +190,9 @@ footer a{color:#4a5164}
 <h1>Des objets imprimés en 3D, pensés pour servir et pour sourire.</h1></div>
 <div class="hero-side"><p>Micronstrate Studio, c'est l'atelier d'un maker passionné de création et de design : des accessoires utiles, des mécanismes malins et des objets qui ont une petite personnalité. Tout est conçu, modélisé et imprimé à la maison.</p>
 <div class="cta">
-<a class="btn btn-main" href="#creations">Voir les créations</a>
+<a class="btn btn-main" href="#codex">Découvrir la gamme Codex</a>
 <a class="btn btn-line" href="https://micronstratestudio.etsy.com">La boutique Etsy</a>
 </div></div>
-</div>
-</section>
-
-<section id="creations" class="red">
-<div class="wrap pad">
-<div class="head-row">
-<div class="lead">
-<p class="eyebrow">Projet à la une · Concours MakerWorld × Nothing</p>
-<h2 class="dots big">Flip Stand</h2>
-<p>L'étui rigide pour Nothing Headphone (1), (1) Pro et (a) qui s'ouvre comme un livre et devient un support de téléphone. Inspiré de la cassette audio, du ghetto blaster et du design Nothing.</p>
-</div>
-<!-- MAKERWORLD: <a class="btn btn-white" href="LIEN_MAKERWORLD">Voir sur MakerWorld</a> -->
-</div>
-<div class="grid3">
-<figure><img src="img/flipstand-ouvert.jpg" width="1600" height="1067" alt="Flip Stand ouvert, le casque rangé à l'intérieur"><figcaption>Un étui qui s'ouvre comme un livre</figcaption></figure>
-<figure><img src="img/flipstand-support.jpg" width="1600" height="1067" alt="Flip Stand ouvert en support de téléphone"><figcaption>Un support de téléphone sur le bureau</figcaption></figure>
-<figure><img src="img/flipstand-cartes.jpg" width="1600" height="1067" alt="Intérieur du Flip Stand avec deux cartes rangées derrière les coussins"><figcaption>Des cartes et des câbles rangés à l'intérieur</figcaption></figure>
-</div>
-<div class="stats">
-<div><span class="dots">7</span><span>pièces imprimées, zéro vis</span></div>
-<div><span class="dots">20</span><span>designs d'yeux</span></div>
-<div><span class="dots">400</span><span>visages possibles</span></div>
-<div><span class="dots">4</span><span>cartes et 2 câbles rangés</span></div>
-</div>
-</div>
-</section>
-
-<section class="dark">
-<div class="wrap pad col" style="max-width:1000px">
-<p class="eyebrow">20 yeux × 20 yeux</p>
-<h2 class="dots big" style="color:#fff">400 looks</h2>
-<p>Chaque œil se change en une seconde grâce aux aimants. Mélange-les, assortis-les à ton humeur, ou dessine les tiens avec le gabarit vierge.</p>
-<img class="rounded" src="img/flipstand-gamme.jpg" width="1600" height="402" alt="Quatre étuis Flip Stand alignés, chacun avec des yeux différents">
-<img class="rounded" src="img/flipstand-yeux.jpg" width="1600" height="914" alt="Huit designs d'yeux du Flip Stand posés sur un plateau noir">
 </div>
 </section>
 
@@ -279,7 +245,6 @@ footer a{color:#4a5164}
 <p>Il se compose de trois pièces : une base, un dossier et une fenêtre. Chacune existe dans les quatre styles, soit 64 combinaisons. Il accueille tous les formats, du livre de poche au beau livre.</p>
 </div>
 </div>
-<video class="wide" src="img/codex-stand.mp4" poster="img/codex-stand-poster.jpg" controls muted playsinline preload="metadata" aria-label="Vidéo de présentation du Codex Stand" style="aspect-ratio:16/9;background:#0e1a2e;margin-top:0"></video>
 <span class="lb wide-wrap" data-n="Deco"><img class="wide" src="img/codex-stand-compteurs.jpg" width="1600" height="1600" loading="lazy" alt="Gros plan sur les deux compteurs du Codex Stand : 025 livres lus, 011 livres à lire" style="aspect-ratio:16/9;object-fit:cover"></span>
 <div class="duo">
 <img src="img/codex-stand-composer.jpg" width="1200" height="1500" loading="lazy" alt="Infographie : choisir la base, le dossier et la fenêtre parmi quatre styles">
@@ -332,6 +297,40 @@ footer a{color:#4a5164}
 <div><span class="num">5</span><h3>Imprimer, corriger, réimprimer</h3><p>Le Codex Stand en est à sa quatrième version de prototype. La dernière s'imprime en trois plateaux, environ 13 heures de machine pour 340 g de filament. Le premier exemplaire, en Deco vert sapin et or, est en cours d'impression.</p></div></div>
 </div>
 <p class="note">À propos des images : les visuels de cette page sont des rendus 3D, réalisés dans Blender à partir des fichiers d'impression eux-mêmes. Les roues, les chiffres et les reliefs sont donc ceux des vrais objets. Les photos des pièces imprimées arrivent bientôt.</p>
+</div>
+</section>
+
+<section id="creations" class="red">
+<div class="wrap pad">
+<div class="head-row">
+<div class="lead">
+<p class="eyebrow">Autre création · Concours MakerWorld × Nothing</p>
+<h2 class="dots big">Flip Stand</h2>
+<p>L'étui rigide pour Nothing Headphone (1), (1) Pro et (a) qui s'ouvre comme un livre et devient un support de téléphone. Inspiré de la cassette audio, du ghetto blaster et du design Nothing.</p>
+</div>
+<!-- MAKERWORLD: <a class="btn btn-white" href="LIEN_MAKERWORLD">Voir sur MakerWorld</a> -->
+</div>
+<div class="grid3">
+<figure><img src="img/flipstand-ouvert.jpg" width="1600" height="1067" alt="Flip Stand ouvert, le casque rangé à l'intérieur"><figcaption>Un étui qui s'ouvre comme un livre</figcaption></figure>
+<figure><img src="img/flipstand-support.jpg" width="1600" height="1067" alt="Flip Stand ouvert en support de téléphone"><figcaption>Un support de téléphone sur le bureau</figcaption></figure>
+<figure><img src="img/flipstand-cartes.jpg" width="1600" height="1067" alt="Intérieur du Flip Stand avec deux cartes rangées derrière les coussins"><figcaption>Des cartes et des câbles rangés à l'intérieur</figcaption></figure>
+</div>
+<div class="stats">
+<div><span class="dots">7</span><span>pièces imprimées, zéro vis</span></div>
+<div><span class="dots">20</span><span>designs d'yeux</span></div>
+<div><span class="dots">400</span><span>visages possibles</span></div>
+<div><span class="dots">4</span><span>cartes et 2 câbles rangés</span></div>
+</div>
+</div>
+</section>
+
+<section class="dark">
+<div class="wrap pad col" style="max-width:1000px">
+<p class="eyebrow">20 yeux × 20 yeux</p>
+<h2 class="dots big" style="color:#fff">400 looks</h2>
+<p>Chaque œil se change en une seconde grâce aux aimants. Mélange-les, assortis-les à ton humeur, ou dessine les tiens avec le gabarit vierge.</p>
+<img class="rounded" src="img/flipstand-gamme.jpg" width="1600" height="402" alt="Quatre étuis Flip Stand alignés, chacun avec des yeux différents">
+<img class="rounded" src="img/flipstand-yeux.jpg" width="1600" height="914" alt="Huit designs d'yeux du Flip Stand posés sur un plateau noir">
 </div>
 </section>
 
